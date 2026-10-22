@@ -1,0 +1,52 @@
+:root{--ink:#0b3b4a;--ink2:#14586c;--paper:#f2f6f8;--card:#fff;--line:#d3dee4;--amber:#ffb224;--text:#14272e;--muted:#4b6068}
+@media (prefers-color-scheme:dark){:root{--paper:#08242d;--card:#0d3340;--line:#1f4b5a;--text:#e8f1f4;--muted:#a3bcc5;--ink:#0b3b4a}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--text);font:17px/1.65 "Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header.top{background:var(--ink);color:#fff}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:700;font-size:1.2rem;text-decoration:none;letter-spacing:.2px}
+nav a{margin-left:20px;text-decoration:none;font-size:.95rem;opacity:.9}
+nav a:hover,nav a:focus-visible{opacity:1;text-decoration:underline}
+.hero{background:var(--ink);color:#fff;padding:56px 0 72px}
+.hero h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;margin:0 0 14px;max-width:16em}
+.hero p.lead{max-width:38em;margin:0 0 28px;color:#cfe3ea}
+form.go{display:flex;gap:10px;max-width:720px;flex-wrap:wrap}
+form.go input{flex:1 1 320px;min-height:54px;padding:0 18px;font-size:1.05rem;border:2px solid transparent;border-radius:10px;background:#fff;color:#14272e}
+form.go input:focus-visible{outline:3px solid var(--amber)}
+form.go button{min-height:54px;padding:0 30px;font-size:1.05rem;font-weight:700;border:0;border-radius:10px;background:var(--amber);color:#2a1d00;cursor:pointer}
+form.go button:hover{filter:brightness(1.06)}form.go button:focus-visible{outline:3px solid #fff;outline-offset:2px}
+#msg{min-height:1.5em;margin:10px 0 0;color:#ffd98a;font-size:.95rem}
+.quick{margin-top:18px;display:flex;gap:8px;flex-wrap:wrap}
+.quick button{border:1px solid #3a7487;background:transparent;color:#fff;border-radius:999px;padding:6px 16px;cursor:pointer;font-size:.92rem}
+.quick button:hover{background:#14586c}
+section{padding:56px 0}
+h2{font-size:clamp(1.5rem,3.2vw,2.1rem);line-height:1.25;margin:0 0 14px}
+h3{font-size:1.1rem;margin:0 0 6px}
+p{margin:0 0 14px;max-width:44em}
+.steps{counter-reset:s;list-style:none;padding:0;margin:24px 0 0;display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 18px 18px 58px;position:relative}
+.steps li::before{content:counter(s);position:absolute;left:16px;top:16px;width:30px;height:30px;border-radius:50%;background:var(--ink2);color:#fff;font-weight:700;display:grid;place-items:center}
+.grid{display:grid;gap:26px 34px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:22px}
+.grid div{border-left:4px solid var(--amber);padding-left:16px}
+.grid p{margin:0;color:var(--muted)}
+.alt{background:var(--card);border-block:1px solid var(--line)}
+.compare{width:100%;border-collapse:collapse;margin-top:20px;background:var(--paper)}
+.compare th,.compare td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top;font-size:.96rem}
+.compare th{background:var(--ink);color:#fff}
+.scroll{overflow-x:auto}
+details{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin-bottom:10px;max-width:760px}
+summary{cursor:pointer;font-weight:600}
+details[open] summary{margin-bottom:8px}
+details p{margin:0;color:var(--muted)}
+.note{border-left:4px solid var(--ink2);background:var(--card);padding:14px 18px;border-radius:0 10px 10px 0;max-width:44em}
+footer{background:var(--ink);color:#bcd3db;padding:34px 0;font-size:.92rem}
+footer a{margin-right:18px}
+@media (prefers-reduced-motion:no-preference){.hero h1{animation:in .5s ease-out both}@keyframes in{from{opacity:0;transform:translateY(8px)}}}
+.page{padding:48px 0 64px}.page h1{font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.2;margin:0 0 16px}
+.page h2{font-size:1.35rem;margin:30px 0 8px}.page ul{max-width:44em;padding-left:22px;margin:0 0 14px}.page li{margin-bottom:6px}
+.minihero{background:var(--ink);color:#fff;padding:36px 0 44px}.minihero h1{margin:0 0 10px;font-size:clamp(1.7rem,4vw,2.5rem);line-height:1.2}
+.minihero p{color:#cfe3ea;max-width:40em;margin:0 0 20px}.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.links a{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 16px;text-decoration:none;font-weight:600}
+.links a:hover,.links a:focus-visible{border-color:var(--ink2)}
