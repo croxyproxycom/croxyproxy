@@ -1,0 +1,1 @@
+{% assign tools = site.pages | where: "group", "tool" | sort: "order" %}<div class="links">{% for p in tools %}{% unless p.url == page.url %}<a href="{{ p.url | relative_url }}">{{ p.nav }} proxy</a>{% endunless %}{% endfor %}</div>
