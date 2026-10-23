@@ -1,0 +1,18 @@
+title: CroxyProxy
+description: CroxyProxy is a free web proxy. Open websites in your browser without installing anything.
+# ---- PREVIEW ke liye (github.io). Domain lagane par neeche ki 2 lines badalni hain:
+#      url: "https://croxyproxycom.com"   aur   baseurl: ""
+url: "https://croxyproxycom.github.io"
+baseurl: "/croxyproxy"
+permalink: /blog/:title/
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+exclude:
+  - README.md
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"

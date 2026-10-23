@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div class="wrap top-intro">
+<p class="crumbs"><a href="{{ '/' | relative_url }}">Home</a> › {{ page.nav }}</p>
+<h1>{{ page.h1 }}</h1>
+<p>{{ page.intro }}</p>
+</div>
+<div class="wrap">
+{% include ad-top.html %}
+{% include widget.html %}
+{% include ad-bottom.html %}
+</div>
+<section><div class="wrap">
+<h2>How to open {{ page.nav }} with the proxy</h2>
+<ol class="steps"><li><h3>Copy the link</h3><p>Copy the {{ page.nav }} page address, or type it.</p></li><li><h3>Paste it in the box</h3><p>Start the proxy and wait a few seconds.</p></li><li><h3>Browse</h3><p>Links inside the page keep opening through the proxy.</p></li></ol>
+</div></section>
+<section class="alt"><div class="wrap content">{{ content }}</div></section>
+{% include faq.html %}
+<section><div class="wrap"><h2>More proxy pages</h2>{% include related.html %}</div></section>
