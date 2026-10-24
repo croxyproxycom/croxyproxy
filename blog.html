@@ -1,9 +1,0 @@
----
-layout: default
-title: "Blog"
-description: "Guides and tips about web proxies, privacy and browsing."
-permalink: /blog/
----
-<div class="wrap page"><h1>Blog</h1>
-{% for post in site.posts %}<article class="item"><h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2><p>{{ post.description }}</p></article>
-{% endfor %}</div>
